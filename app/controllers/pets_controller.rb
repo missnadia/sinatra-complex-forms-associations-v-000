@@ -6,7 +6,7 @@ class PetsController < ApplicationController
   end
 
   get '/pets/new' do
-    erb :'/pets/new'
+    erb :'/pets/:id'
   end
 
   post '/pets' do
