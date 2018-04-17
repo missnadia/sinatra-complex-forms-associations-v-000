@@ -2,6 +2,7 @@ class OwnersController < ApplicationController
 
   get '/owners' do
     @owners = Owner.all
+    @pets = Pets.all
     erb :'/owners/index' 
   end
 
